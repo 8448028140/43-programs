@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Reverse a number</h1>
+<p id="number">reverse of the number</p>
+
+    </body>
+    <script>
+        let n = prompt("Enter 4 digit number");
+function reverse_a_number(value)
+{let reverse = 0
+	while(value){
+        reverse = reverse*10
+        reverse += value %10
+        value = Math.floor(value/10)
+    }
+    return reverse; 
+}
+document.getElementById("number").innerHTML=reverse_a_number(n)
+
+
+
+    </script>
+</html>

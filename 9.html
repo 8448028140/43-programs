@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>The youngest of All</h1>
+    <p id="output"></p>
+<p id="output2"></p>
+<p id ="output3"></p>
+</body>
+<script>
+    let a = prompt("Enter the age of A");
+    let b = prompt("Enter the age of B");
+    let c = prompt("Enter the age of C");
+    function youngest()
+    {
+        if(a<b)
+           { if (a < c)
+        { document.getElementById("output").innerHTML= "A is the youngest" }
+        else  
+            {document.getElementById("output2").innerHTML= "C is the youngest"}
+           }
+        else if (b<c)
+        {document.getElementById("output3").innerHTML = "B is the youngest"}
+
+        else {document.getElementById("output2").innerHTML=  "C is the youngest"}
+    
+    }
+    youngest();
+</script>
+</html>

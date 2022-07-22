@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>To UPPERCASE</h1>
+    <input type ="text" id="demo">
+    <button onclick = "perimeter()" >Submit</button>
+    <p id="demo2"></p>
+    </body>
+    <script>
+    function perimeter()
+    {
+        var n = document.getElementById("demo").value;
+        n = n.toString();
+        n = n.toUpperCase();
+        document.getElementById("demo2").innerHTML=n
+    }
+    
+</script>
+</html>

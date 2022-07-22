@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Transpose of Matrix</h1>
+</body>
+<script>
+    let A = [[1, 3, 1, 2],
+    [2, 5, 2, 4],
+    [3, 7, 3, 7],
+    [4, 2, 4, 2]];
+    var B = Array(4).fill(0)
+    console.log(B);
+    for (let i = 0; i < 4; i++) {
+        B[i] = new Array(4);
+    }
+
+
+    function transpose(A, B) {
+
+
+
+        for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 4; j++) {
+                {
+                    B[i][j] = A[j][i]
+                }
+            }
+        }
+
+
+    }
+    transpose(A, B);
+
+
+    for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++)
+            document.write(B[i][j] + " ");
+        document.write("<br>");
+    }
+
+
+
+</script>
+
+</html>

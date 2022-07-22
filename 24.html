@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> Reverse of number</h1>
+<p id="output"></p>
+<script>
+function reverse(n) {
+if (n<10 ) {
+    return n ;
+}
+
+else {
+
+    const LastDigit = n % 10 * 10**(n.toString().length - 1)
+    const remaining = Math.floor(n/10)
+    return reverse = LastDigit + reverse(remaining)  
+}
+}
+
+const num = prompt("Enter the number") ;
+
+if (num > 0) {
+let result = reverse(num);
+document.getElementById("output").innerHTML = 'the reverse of number = ' + result
+}
+
+</script>
+</body>
+</html>

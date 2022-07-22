@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> Sum of digits using Recursion</h1>
+<p id="output"></p>
+<script>
+function sum_of_digits(n) {
+if (n<10 ) {
+    return n ;
+}
+
+else {
+    const LastDigit = n % 10
+    const remaining = Math.floor(n/10)
+    return sum = LastDigit + sum_of_digits(remaining)  
+}
+}
+
+const num = prompt("Enter the number") ;
+
+if (num > 0) {
+let result = sum_of_digits(num);
+document.getElementById("output").innerHTML = 'the sum of digits = ' + result
+}
+
+</script>
+</body>
+</html>

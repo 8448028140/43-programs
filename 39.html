@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Remove Vowels</h1>
+    <input type="text" id="demo">
+    <button onclick="vowel()">Submit</button>
+    <p id="demo2"></p>
+</body>
+<script>
+    function vowel() {
+        var n = document.getElementById("demo").value;
+        var m = new Array(80)
+        n = n.split("");
+        for (i = 0; i <= n.length; i++) {
+            var p = n[i]
+            if (p == "a" || p == "e" || p == "i" || p == "o" || p == "u" || p == "A" || p == "E" || p == "I" || p == "O" || p == "U") {
+                m[i] = ""
+            }
+            else {
+                m[i] = p
+            }
+
+        }
+        m = m.join("")
+        document.getElementById("demo2").innerHTML = m
+    }
+
+</script>
+
+</html>

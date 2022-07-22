@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Range between numbers</h1>
+        <p id="demo"></p>
+        
+    </body>
+    <script>
+        var n1 = prompt("Enter the first number")
+        var n2 = prompt("Enter the second number")
+     var n = parseInt(n1);
+     var m = parseInt(n2);
+     
+        function myfunc(){
+if(n<m){
+        for (i = n + 1 ; i < m ; i++){
+     console.log(i)
+            let result =  i + "<br>"
+            console.log(result)
+document.writeln(result)
+        }}
+    else 
+    {
+        for (i = m + 1 ; i < n ; i++){
+     console.log(i)
+            let result =  i + "<br>"
+            console.log(result)
+document.writeln(result)
+    }
+}}
+        myfunc()
+    </script>
+</html>

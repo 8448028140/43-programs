@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Factorial of number</h1>
+
+    <input type="text" id="number">
+    <button onclick="factorial()">SUBMIT</button>
+
+    <p id="output"></p>
+</body>
+<script>
+    function factorial() {
+        var n = document.getElementById("number").value
+        console.log(n)
+        var fact = 1;
+
+        for (let i = 1; i <= n; i++) {
+            fact = fact * i
+        }
+        console.log(fact)
+        document.getElementById("output").innerHTML = fact + "  is the factorial of number  " + n
+
+
+    }
+
+
+</script>
+
+</html>

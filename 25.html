@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2> Finding first two maximum numbers </h2>
+    <p id="demo"></p>
+
+    <script>
+        let points = new Array(10);
+        points = prompt("enter the array")
+        points = points.split(",")
+        points.sort(
+            function (a, b) {
+             return b - a }
+             );
+        document.getElementById("demo").innerHTML = "first and second max numbers are  " +  points[0] +" and " + points[1]
+    </script>
+
+</body>
+
+</html>

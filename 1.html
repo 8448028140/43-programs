@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- area and rectangle -->
+
+
+    <h1>Enter width and height</h1>
+    <h2>Width: <input type="number" id="width"></h2>
+    <h2>length: <input type="number" id="length"></h2>
+
+    <label for="areaPer">Choose area or perimeter:</label>
+    <select name="Method" id="method">
+        <option value="area">Area</option>
+        <option value="perimeter">Perimeter</option>
+    </select>
+    <button type="button" onclick="calculate()"> Submit </button>
+    <p id="output1"></p>
+    
+
+
+</body>
+<script>
+    // area and perimeter of rec
+    function calculate() {
+        let values = document.getElementById("method").value
+
+    
+        if (values == 'area') {
+            area();
+
+        }
+        else if(values == 'perimeter')
+        {
+            perimeter();
+        }
+        else{
+            return err;
+        }
+    }
+
+    function area() {
+        var w = document.getElementById("width").value;
+        var l = document.getElementById("length").value;
+
+        var area = w * l;
+
+
+        var result1 = "Area: " + area
+
+        document.getElementById("output1").innerHTML = result1;
+    }
+    function perimeter() {
+    
+        var w = document.getElementById("width").value;
+    
+
+        var l = document.getElementById("length").value;
+        
+
+        var perimeter = (2 * w) + (2 * l);
+        var result2 = "Perimeter: " + perimeter
+
+        
+
+        document.getElementById("output1").innerHTML = result2;
+    }
+</script>
+
+</html>

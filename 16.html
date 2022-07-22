@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Count of zeros , positive and negative</title>
+    <h1>Count of zeros , positive and negative</h1>
+</head>
+
+<body>
+    <input type="text" id="number">
+    <button onclick="count()"> Submit </button>
+
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+    <p id="output4"></p>
+</body>
+<script>
+    var n = Array(25)
+
+    function count() {
+        // var zero = 0
+
+        // var   positive = 0
+        // var negative = 0
+        var n = document.getElementById("number").value
+        console.log(n)
+        let pos = 0, neg = 0, odd = 0; even = 0;
+        const numbers = n.split(',')
+        numbers.forEach(number => {
+            if (number > 0) {
+                pos++;
+                if (number % 2 == 0) {
+                    even++;
+                }
+                else { odd++; }
+            } else if (number < 0) {
+                neg++;
+            }
+
+        });
+
+        document.getElementById("output1").innerHTML = pos + "number of pos"
+        document.getElementById("output2").innerHTML = even + "number of even"
+        document.getElementById("output3").innerHTML = neg + "number of neg"
+        document.getElementById("output3").innerHTML = odd + "number of odd"
+    
+
+        //     for (var i = 0; i < n.length; i++ ) {
+        //         n[i]=i
+        //         console.log(i) ;
+        //         if (n[i] == 0 ){
+        //           zero == zero++ ;
+        //         document.getElementById("output1").innerHTML = zero + "number of zeroes"
+        //         }
+        //         else if (n[i]>0){
+        //             positive == positive++ ;
+        //         document.getElementById("output2").innerHTML= positive + " number of positive numbers "            }
+        //     else if (n[i]=="," ) 
+        //     {i = i++}
+
+        //    else { negative == negative++ ;
+        //     positive==positive-- ;}
+        //     document.getElementById("output3").innerHTML = negative + " number of negative numbers "
+    }
+
+</script>
+
+</html>

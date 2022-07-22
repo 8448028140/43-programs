@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Armstrong numbers between the two numbers </h1>
+        <p id="output"></p>
+    </body>
+    <script>
+    
+
+const number = prompt('Enter lower number: ');
+const number2 = prompt('Enter higher number')
+for (let i=number ; i<=number2 ; i++){
+
+    let sum = 0;
+    let temp = i ;
+while (temp > 0) {
+    let remainder = temp % 10;
+
+    sum += remainder ** number.toString().length;
+
+    temp = Math.floor(temp / 10); 
+}
+if (sum == i) {
+    document.writeln(i + "<br>")
+}
+}
+
+
+    </script>
+
+</html>

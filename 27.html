@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2> Interchange even and odd </h2>
+    <p id="demo"></p>
+
+    <script>
+        let arr = [1,2,3,4,5];
+        function replace(arr)
+	{
+		
+		let n = arr.length;
+
+		
+		for (let i = 0; i < n; i++) {
+
+			for (let j = i + 1; j < n; j++) {
+
+				if (
+					 arr[i] % 2 == 0
+					&& arr[j] % 2 != 0) {
+
+					let tmp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = tmp;
+
+				
+
+					break;
+				}
+				else if ( arr[i] % 2 != 0
+						&& arr[j] % 2 == 0) {
+
+				
+					let tmp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = tmp;
+
+				
+					break;
+				}
+			}
+        
+			document.write(arr[i] + " ");
+}
+
+		
+
+			}
+    replace(arr)
+    </script>
+
+</body>
+
+</html>

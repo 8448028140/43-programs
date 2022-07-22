@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Sum of digits</h1>
+<p id = "Sum">SUM of digits</p>
+    </body>
+    <script>
+        let value = prompt("Enter the four digits nymber")
+sum = 0;
+while (value) {
+    sum += value % 10;
+    value = Math.floor(value / 10);
+}
+document.getElementById("Sum").innerHTML=sum 
+    </script>
+</html>

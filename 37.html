@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>If the string is palindrome or not</h1>
+    </body>
+    <script>
+        let n = prompt("Enter the string ");
+        n = n.toString()
+    
+function own_substring()
+{
+    var result = ""
+  for (let i = n.length ; i>=0 ; i--){
+    result += n.charAt(i) 
+  }
+ if (result==n){
+    document.writeln("This string is a palindrome ")
+ }
+ else {
+    document.writeln("This string is not a palindrome")
+ }
+
+}
+own_substring();
+
+</script>
+</html>
