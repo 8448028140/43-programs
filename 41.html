@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Count of elements</h1>
+    <input type="text" id="demo">
+    <button onclick="count_occur()">Submit</button>
+</body>
+<script>
+
+    function count_occur() {
+        var str = document.getElementById("demo").value
+        str = str.split("")
+        for (let i = 0; i < str.length; i++) {
+            let count = 0;
+            for (let j = 0; j < str.length; j++) {
+                if (str[i] == str[j] && i > j) {
+                    break;
+                }
+
+
+                if (str[i] == str[j]) {
+                    count++;
+
+                }
+            }
+            if (count > 0) {
+
+                document.writeln(str[i] + "  "  +"occurs" + "  " + count + "  " + "times" + "<br>")
+
+            }
+
+        }
+    }
+
+</script>
+
+</html>
